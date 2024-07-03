@@ -18,6 +18,11 @@ class DatabaseSeeder extends Seeder
             'name' => 'Item',
         ]);
 
+        DB::table('measurement_units')->insert([
+            'name' => 'Quantidade',
+            'abbreviation' => 'Qtd',
+        ]);
+
         DB::table('items')->insert([
             'name' => 'Fita Crepe 19x50MM',
             'item_group_id' => 1,
@@ -27,11 +32,6 @@ class DatabaseSeeder extends Seeder
             'sale_item' => true,
             'purchase_item' => false,
             'measurement_unit_id' => 1,
-        ]);
-
-        DB::table('measurement_units')->insert([
-            'name' => 'Quantidade',
-            'abbreviation' => 'Qtd',
         ]);
 
         DB::table('inventories')->insert([

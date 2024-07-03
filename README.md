@@ -1,3 +1,13 @@
+<p>This is a simple inventory application implemented with <a href="https://filamentphp.com/" target="_blank">filament</a></p>
+
+## In order to run this project you will need to follow those steps:
+* Run **composer install** in the root directory
+* Update the database variables in the **.env** file
+* Run **php artisan migrate** to create the tables in the database
+* Run **php artisan db:seed** to seed the database
+* Run **php artisan make:filament-user** to create a new user account
+* Open /admin in your web browser and sign in.
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
